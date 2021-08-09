@@ -13,3 +13,5 @@ def double(x):
 
 sequence = [1, 3, 5, 7]
 doubled = [double(x) for x in sequence]
+# both are the same thing
+doubled = map(double, sequence)
