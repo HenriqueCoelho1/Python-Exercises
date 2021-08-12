@@ -16,7 +16,8 @@ class Book:
     def read(self, pages: int):
         if self.pages_read + pages > self.page_count:
             raise TooManyPagesReadError(
-                f"You tried to read {self.pages_read + pages} pages, but this look only has {self.page_count} pages. "
+                f"""You tried to read {self.pages_read + pages} pages, 
+                but this look only has {self.page_count} pages. """
             )
         self.pages_read += pages
         print(
